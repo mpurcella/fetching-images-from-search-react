@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fetching-images-from-search-react/static/css/main.6605cb7d.css",
+    "main.js": "/fetching-images-from-search-react/static/js/main.33b95086.js",
+    "index.html": "/fetching-images-from-search-react/index.html",
+    "main.6605cb7d.css.map": "/fetching-images-from-search-react/static/css/main.6605cb7d.css.map",
+    "main.33b95086.js.map": "/fetching-images-from-search-react/static/js/main.33b95086.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6605cb7d.css",
+    "static/js/main.33b95086.js"
+  ]
+}
