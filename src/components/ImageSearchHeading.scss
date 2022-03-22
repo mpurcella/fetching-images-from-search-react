@@ -1,0 +1,16 @@
+.image-search-heading {
+	font-size: 45px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1.5px;
+	margin-bottom: 40px;
+
+	@media (max-width: 768px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 35px;
+	}
+}

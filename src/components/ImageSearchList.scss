@@ -1,0 +1,10 @@
+.images-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
