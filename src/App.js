@@ -8,10 +8,12 @@ import './App.scss';
 
 const App = () => {
 	const [inputText, setInputText] = useState([]);
+	const [searchQuery, setSearchQuery] = useState('');
 	const [images, setImages] = useState([]);
 
 	const handleFormSubmit = async (searchInput) => {
 		try {
+			setSearchQuery(searchInput);
 			const response = await axios.get(
 				`https://pixabay.com/api/?key=21484393-fe2bda1207e80c999410f0783&q=${searchInput}&image_type=photo&orientation=horizontal&per_page=200`
 			);
@@ -25,7 +27,15 @@ const App = () => {
 	return (
 		<div className='app'>
 			<ImageSearchHeading heading='Search For An Image' />
-			<ImageSearchForm inputText={inputText} setInputText={setInputText} handleFormSubmit={handleFormSubmit} />
+			<ImageSearchForm
+				inputText={inputText}
+				setInputText={setInputText}
+				setSearchQuery={setSearchQuery}
+				handleFormSubmit={handleFormSubmit}
+			/>
+			<p className='search-query-text'>
+				Showing Image Results For: <span>{searchQuery}</span>
+			</p>
 			<ImageSearchList images={images} />
 			<ScrollButton />
 		</div>
