@@ -1,7 +1,7 @@
 .scroll-top-btn {
 	font-size: 18px;
 	color: #fff;
-	background-color: transparent;
+	background-color: #fb9b50;
 	display: flex;
 	align-items: center;
 	position: fixed;
@@ -18,7 +18,8 @@
 
 	&:hover {
 		color: #0f0f19;
-		background-color: #fb9b50;
+		background-color: #5aa5cd;
+		border-color: #5aa5cd;
 	}
 
 	&:focus {
