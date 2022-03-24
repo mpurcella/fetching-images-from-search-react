@@ -34,7 +34,15 @@ const App = () => {
 				handleFormSubmit={handleFormSubmit}
 			/>
 			<p className='search-query-text'>
-				Showing Image Results For: <span>{searchQuery}</span>
+				{searchQuery ? (
+					<>
+						{' '}
+						<span>Showing Image Results For: </span>
+						<span>{searchQuery}</span>
+					</>
+				) : (
+					''
+				)}
 			</p>
 			<ImageSearchList images={images} />
 			<ScrollButton />
